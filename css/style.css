@@ -7,21 +7,7 @@
   src: url(../assets/fonts/Gilroy-Light.otf);
 }
 :root {
-  --fontExtraBold: "Gilroy-ExtraBold";
-  --fontLight: "Gilroy-Light";
-  --menuColor: #141C3A;
-  --line: #E5EBF2;
-  --divisor: #DCDCDE;
-  --bgIntro: #F9FBFD;
-  --textColor: #535E88;
-  --selected: #8428F8;
   scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
@@ -29,34 +15,28 @@
   margin: 0 auto;
 }
 
-.top-menu {
-  border-bottom: 1px solid var(--line);
+.title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #E5EBF2;
 }
-
-.top-menu .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 115px;
-}
-
-.logo a {
-  text-decoration: none;
-}
-
-.logo p {
-  font-family: var(--fontExtraBold);
-  color: var(--menuColor);
+.title h2 {
   font-size: 26px;
   line-height: 30px;
+  font-family: "Gilroy-ExtraBold";
+  color: #141C3A;
+  margin-bottom: 46px;
 }
 
-.menu nav a {
-  font-family: var(--fontLight);
-  font-size: 17px;
-  text-decoration: none;
-  color: var(--menuColor);
-  margin-right: 38px;
+.divisor {
+  width: 1px;
+  height: 27px;
+  background-color: #DCDCDE;
+}
+
+.selected {
+  color: #8428F8 !important;
+  font-family: "Gilroy-ExtraBold" !important;
 }
 
 header .container {
@@ -64,64 +44,56 @@ header .container {
   flex-direction: column;
   align-items: center;
 }
-
-h1 {
-  font-family: var(--fontExtraBold);
+header .container h1 {
+  font-family: "Gilroy-ExtraBold";
   font-size: 48px;
   margin: 113px 0 26px 0;
+  color: #141C3A;
 }
-
-.contato {
-  margin: 26px 0 0 0;
-  display: flex;
-  column-gap: 50px;
-}
-
-.divisor {
-  width: 1px;
-  height: 27px;
-  background-color: var(--divisor);
-}
-
-.about {
+header .container .about {
   margin: 0 0 47px 0;
   font-size: 17px;
+  font-family: "Gilroy-Light";
 }
-
-.about,
-.mail,
-.linkedin {
-  font-family: var(--fontLight);
+header .container p {
+  text-align: center;
 }
-
-.intro {
-  margin: 132px 0 50px 0;
-  background-color: var(--bgIntro);
-  height: 507px;
-}
-
-.intro .container {
+header .container .contato {
+  margin: 26px 0 0 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 156px 0 144px 0;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+header .container .contato .mail,
+header .container .contato .linkedin {
+  font-family: "Gilroy-Light";
 }
 
-.intro h2 {
+.top-menu {
+  border-bottom: 1px solid #E5EBF2;
+}
+.top-menu .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115px;
+}
+.top-menu .container .logo a {
+  text-decoration: none;
+}
+.top-menu .container .logo p {
+  font-family: "Gilroy-ExtraBold";
+  color: #141C3A;
   font-size: 26px;
   line-height: 30px;
-  color: var(--menuColor);
-  font-family: var(--fontExtraBold);
-  margin: 0 0 31px 0;
 }
-
-.intro p {
+.top-menu .container .menu nav a {
+  font-family: "Gilroy-Light";
   font-size: 17px;
-  line-height: 30px;
-  text-align: center;
-  font-family: var(--fontLight);
-  color: var(--textColor);
+  text-decoration: none;
+  color: #141C3A;
+  margin-left: 38px;
 }
 
 .experience .container {
@@ -130,14 +102,75 @@ h1 {
   align-items: center;
 }
 
-.experience h2 {
-  font-size: 26px;
+.education {
+  height: 550px;
+  background-color: #F9FBFD;
+}
+.education .container {
+  max-width: 1343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education .container .title {
+  padding: 50px 0 0 0;
+}
+.education .container .content-section {
+  display: flex;
+  -moz-column-gap: 31px;
+       column-gap: 31px;
+}
+.education .container .content-section .content img {
+  margin-bottom: 36px;
+}
+.education .container .content-section .content .periodo {
+  margin-top: 120px;
+}
+.education .container .content-section .content .periodo,
+.education .container .content-section .content .local {
+  font-family: "Gilroy-Light";
+  font-size: 20px;
   line-height: 30px;
-  font-family: var(--fontExtraBold);
-  color: var(--menuColor);
+  color: #141C3A;
+}
+.education .container .content-section .content .descricao {
+  font-family: "Gilroy-Light";
+  font-size: 17px;
+  line-height: 30px;
+  color: #535E88;
+  margin: 13px 0 35px 0;
 }
 
-.selected {
-  color: var(--selected) !important;
-  font-family: var(--fontExtraBold) !important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  margin: 132px 0 50px 0;
+  background-color: #F9FBFD;
+  height: 507px;
+}
+.intro .container {
+  width: 609px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 156px 0 144px 0;
+}
+.intro .container h2 {
+  font-size: 26px;
+  line-height: 30px;
+  color: #141C3A;
+  font-family: "Gilroy-ExtraBold";
+  margin: 0 0 31px 0;
+}
+.intro .container p {
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "Gilroy-Light";
+  color: #535E88;
 }/*# sourceMappingURL=style.css.map */

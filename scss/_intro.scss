@@ -1,0 +1,30 @@
+.intro {
+    margin: 132px 0 50px 0;
+    background-color: $bgIntro;
+    height: 507px;
+
+    .container {
+        width: 609px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 156px 0 144px 0;
+
+        h2 {
+            font-size: 26px;
+            line-height: 30px;
+            color: $menuColor;
+            font-family: $fontExtraBold;
+            margin: 0 0 31px 0;
+        }
+    
+        p {
+            font-size: 17px;
+            line-height: 30px;
+            text-align: center;
+            font-family: $fontLight;
+            color: $textColor;
+        }
+    }
+}

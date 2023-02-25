@@ -1,0 +1,33 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 925px;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $line;
+
+    h2 {
+        font-size: 26px;
+        line-height: 30px;
+        font-family: $fontExtraBold;
+        color: $menuColor;
+        margin-bottom: 46px;
+    }
+}
+
+.divisor {
+    width: 1px;
+    height: 27px;
+    background-color: $divisor;
+}
+
+.selected {
+    color: $selected !important;
+    font-family: $fontExtraBold !important;
+}
