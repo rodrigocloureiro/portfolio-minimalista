@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url(../assets/fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url(../assets/fonts/Gilroy-Light.otf);
+}
+
+:root {
+    --fontExtraBold: 'Gilroy-ExtraBold';
+    --fontLight: 'Gilroy-Light';
+    --menuColor: #141C3A;
+    --line: #E5EBF2;
+    --divisor: #DCDCDE;
+    --bgIntro: #F9FBFD;
+    --textColor: #535E88;
+    --selected: #8428F8;
+
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 925px;
+    margin: 0 auto;
+}
+
+.top-menu {
+    border-bottom: 1px solid var(--line);
+}
+
+.top-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo p {
+    font-family: var(--fontExtraBold);
+    color: var(--menuColor);
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.menu nav a {
+    font-family: var(--fontLight);
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--menuColor);
+    margin-right: 38px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--fontExtraBold);
+    font-size: 48px;
+    margin: 113px 0 26px 0;
+}
+
+.contato {
+    margin: 26px 0 0 0;
+    display: flex;
+    column-gap: 50px;
+}
+
+.divisor{
+    width: 1px;
+    height: 27px;
+    background-color: var(--divisor);
+}
+
+.about {
+    margin: 0 0 47px 0;
+    font-size: 17px;
+}
+
+.about,
+.mail,
+.linkedin {
+    font-family: var(--fontLight);
+}
+
+.intro {
+    margin: 132px 0 50px 0;
+    background-color: var(--bgIntro);
+    height: 507px;
+}
+
+.intro .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 156px 0 144px 0;
+}
+
+.intro h2 {
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--menuColor);
+    font-family: var(--fontExtraBold);
+    margin: 0 0 31px 0;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    font-family: var(--fontLight);
+    color: var(--textColor);
+}
+
+.experience .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience h2{
+    font-size: 26px;
+    line-height: 30px;
+    font-family: var(--fontExtraBold);
+    color: var(--menuColor);
+}
+
+.selected {
+    color: var(--selected) !important;
+    font-family: var(--fontExtraBold) !important;
+}
